@@ -233,8 +233,9 @@
         var noTelp = document.querySelector('#telp').value;
         var message = document.querySelector('#message').value;
 
-        var url = 'https://wa.me/' + phonenumber + '?text=' + '*Name :* ' + name + '%0a' + '*No.Telp :* ' + noTelp + '%0a' + '*Pesan :* ' + message + '%0a%0a' + 'This is an example of send HTML form data to WhatsApp';
+        var url = 'https://wa.me/' + phonenumber + '?text=' + '*Name :* ' + name + '%0a' + '*No.Telp :* ' + noTelp + '%0a' + '*Pesan :* ' + message + '%0a%0a';
 
+        form.reset();
         window.open(url, '_blank').focus();
       }
     </script>
