@@ -235,8 +235,7 @@
 
         var url = 'https://wa.me/' + phonenumber + '?text=' + '*Name :* ' + name + '%0a' + '*No.Telp :* ' + noTelp + '%0a' + '*Pesan :* ' + message + '%0a%0a';
 
-        form.reset();
-        window.open(url, '_blank').focus();
+        window.open(url, '_blank').focus() + form.reset();
       }
     </script>
   </body>
