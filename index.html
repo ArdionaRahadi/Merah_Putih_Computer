@@ -236,9 +236,7 @@
 		    var pesan = document.getElementById("pesan").value;
 
         if (nama != "" && telp!="" && pesan !="") {
-			    return true + window.open('https://wa.me/6285854653667?text=*Nama* :%20' + nama + '%0a*No.Telp* :%20' + telp + '%0a*Pesan* :%20' + pesan + '%0a').focus() + form.reset();
-        } else {
-          
+			    return true + window.open('https://wa.me/6285854653667?text=*Nama* :%20' + nama + '%0a*No.Telp* :%20' + telp + '%0a*Pesan* :%20' + pesan + '%0a', '_blank').focus() + form.reset();
         }
     }
     </script>
