@@ -1,7 +1,7 @@
 function validasi(){
-    var nama = document.getElementById('nama').value
-    var telp = document.getElementById("no").value;
-    var pesan = document.getElementById("pesan").value;
+    let nama = document.getElementById('nama').value
+    let telp = document.getElementById("no").value;
+    let pesan = document.getElementById("pesan").value;
     // var URL = window.open("https://wa.me/6285854653667?text=*Nama* :%20" + nama + "%0a*No.Telp* :%20" + telp + "%0a*Pesan* :%20" + pesan + "%0a");
 
     if (nama === "" || telp === "" || pesan === "") {
