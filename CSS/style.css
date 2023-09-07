@@ -26,3 +26,8 @@ footer {
 i {
   margin-right: 2px;
 }
+
+#kotak, #hide {
+  display: none;
+}
+

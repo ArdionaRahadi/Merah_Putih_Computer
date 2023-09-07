@@ -81,9 +81,7 @@
               <p>Merah putih com adalah toko aksesoris komputer dan juga layanan/jasa servis yang terletak di Jl.Raya Ngelom Ruko Pondok Pesantren Bahaudin sepanjang - Taman No 179.</p>
             </div>
             <div class="col-md-4">
-              <p>
-                Merah Putih com is a computer accessories store and also service / service located at Jl. Raya Ngelom Ruko Pondok Pesantren Bahaudin along - Taman No 179.
-                </p>
+              <p>Merah Putih com is a computer accessories store and also service / service located at Jl. Raya Ngelom Ruko Pondok Pesantren Bahaudin along - Taman No 179.</p>
             </div>
           </div>
         </div>
@@ -133,6 +131,14 @@
           </div>
           <div class="col-md-3 mb-4">
             <div class="card">
+              <img src="IMG/PKL/..." class="card-img-top" alt="Mouse Gamen" />
+              <div class="card-body">
+                <p class="card-text text-center">Mouse Gamen</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card">
               <img src="IMG/PKL/Tinta-Epson-664.png" class="card-img-top" alt="Tinta Epson 664" />
               <div class="card-body">
                 <p class="card-text text-center">Tinta Epson 664</p>
@@ -149,17 +155,46 @@
           </div>
           <div class="col-md-3 mb-4">
             <div class="card">
-              <img src="IMG/PKL/USB Hub.png" class="card-img-top" alt="USB Hub" />
+              <img src="IMG/PKL/Tinta-Pixma-790.png" class="card-img-top" alt="Tinta Pixma 790" />
               <div class="card-body">
-                <p class="card-text text-center">USB Hub</p>
+                <p class="card-text text-center">Tinta Pixma 790</p>
               </div>
             </div>
           </div>
           <div class="col-md-3 mb-4">
             <div class="card">
-              <img src="IMG/PKL/Kebel VGA.png" class="card-img-top" alt="Kabel VGA" />
+              <img src="IMG/PKL/Tinta-DInkpng.png" class="card-img-top" alt="Tinta Dink" />
               <div class="card-body">
-                <p class="card-text text-center">Kabel VGA 3 Meter</p>
+                <p class="card-text text-center">Tinta Dink</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="kotak">
+        <div class="row">
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="IMG/PKL/Charger-Laptop-Asus.png" class="card-img-top" alt="Charger Laptok Asus" />
+              <div class="card-body">
+                <p class="card-text"><strong>Charger Laptok Asus</strong> <br />Model : 65W <br />Input : 100-240V-1,5A <br />Output : 19V-3,42A <br />DC : 5,5*2,5</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="IMG/PKL/Charger-Laptop-Lenovo.png" class="card-img-top" alt="Charger Laptop Lenovo" />
+              <div class="card-body">
+                <p class="card-text text-center">Charger Laptop Lenovo</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="IMG/PKL/Charger-Laptop-HP.png" class="card-img-top" alt="Charger Laptop HP" />
+              <div class="card-body">
+                <p class="card-text text-center">Charger Laptop HP</p>
               </div>
             </div>
           </div>
@@ -170,6 +205,15 @@
                 <p class="card-text text-center">Flashdisk</p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <button onclick="seen()" type="button" class="btn btn-danger" id="seen">Click for more</button>
+            <button onclick="hide()" type="button" class="btn btn-danger" id="hide">Collapse</button>
           </div>
         </div>
       </div>
@@ -196,17 +240,28 @@
             <form autocomplete="off" action="#" method="post" onsubmit="validasi()">
               <div class="mb-3">
                 <label for="nama" class="form-label">Nama</label>
-                <input type="text" class="form-control" name="nama" id="nama" aria-describedby="name" oninvalid="this.setCustomValidity('Masukkan Nama')" oninput="this.setCustomValidity('')" required/>
+                <input type="text" class="form-control" name="nama" id="nama" aria-describedby="name" oninvalid="this.setCustomValidity('Masukkan Nama')" oninput="this.setCustomValidity('')" required />
               </div>
               <div class="mb-3">
                 <label for="no-telp" class="form-label">No Telp</label>
-                <input type="tel" name="noHP" class="form-control" id="no" pattern="(\+62|62|0)8[1-9][0-9]{6,9}$" placeholder="+62/62/0" aria-describedby="telp" oninvalid="this.setCustomValidity('Masukkan No.Telp Anda Dengan Benar')" oninput="this.setCustomValidity('')" required/>
+                <input
+                  type="tel"
+                  name="noHP"
+                  class="form-control"
+                  id="no"
+                  pattern="(\+62|62|0)8[1-9][0-9]{6,9}$"
+                  placeholder="+62/62/0"
+                  aria-describedby="telp"
+                  oninvalid="this.setCustomValidity('Masukkan No.Telp Anda Dengan Benar')"
+                  oninput="this.setCustomValidity('')"
+                  required
+                />
               </div>
               <div class="mb-3">
                 <label for="text area" class="form-label">Pesan</label>
                 <textarea name="pesan" class="form-control" id="pesan" rows="3" oninvalid="this.setCustomValidity('Masukkan Pesan')" oninput="this.setCustomValidity('')" required></textarea>
               </div>
-              <input type="submit" value="Kirim" class="tombol btn btn-dark fw-bold" style="background-color: #f36464">
+              <input type="submit" value="Kirim" class="tombol btn btn-dark fw-bold" style="background-color: #f36464" />
             </form>
           </div>
         </div>
@@ -231,17 +286,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
     <!-- my script -->
-    <script type="text/javascript">
-      function validasi(){
-        var nama = document.getElementById('nama').value
-        var telp = document.getElementById("no").value;
-		    var pesan = document.getElementById("pesan").value;
-        var URL = window.open("https://wa.me/6285854653667?text=*Nama* :%20" + nama + "%0a*No.Telp* :%20" + telp + "%0a*Pesan* :%20" + pesan + "%0a");
-
-        if (nama != "" && telp!="" && pesan !="") {
-			    return true + window.open(URL, "_blank").focus() + form.reset();
-        }
-    }
-    </script>
+    <script src="JS/script.js"></script>
   </body>
 </html>
