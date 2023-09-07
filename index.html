@@ -237,7 +237,7 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-7">
-            <form autocomplete="off" action="#" method="post" onsubmit="validasi()">
+            <form autocomplete="off" onsubmit="validasi()">
               <div class="mb-3">
                 <label for="nama" class="form-label">Nama</label>
                 <input type="text" class="form-control" name="nama" id="nama" aria-describedby="name" oninvalid="this.setCustomValidity('Masukkan Nama')" oninput="this.setCustomValidity('')" required />
@@ -261,7 +261,7 @@
                 <label for="text area" class="form-label">Pesan</label>
                 <textarea name="pesan" class="form-control" id="pesan" rows="3" oninvalid="this.setCustomValidity('Masukkan Pesan')" oninput="this.setCustomValidity('')" required></textarea>
               </div>
-              <input type="submit" value="Kirim" class="tombol btn btn-dark fw-bold" style="background-color: #f36464" />
+              <button type="submit" class="tombol btn btn-dark fw-bold" style="background-color: #f36464">Kirim</button>
             </form>
           </div>
         </div>
