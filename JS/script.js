@@ -1,16 +1,19 @@
+// validasi form
 function validasi(){
     let nama = document.getElementById('nama').value
     let telp = document.getElementById("no").value;
     let pesan = document.getElementById("pesan").value;
-    var URL = window.open("https://wa.me/6285854653667?text=*Nama* :%20" + nama + "%0a*No.Telp* :%20" + telp + "%0a*Pesan* :%20" + pesan + "%0a");
+    var URL = window.open("https://wa.me/6285606775439?text=*Nama* :%20" + nama + "%0a*No.Telp* :%20" + telp + "%0a*Pesan* :%20" + pesan + "%0a");
 
     if (nama === "" || telp === "" || pesan === "") {
         
     } else {
-        window.open(URL, "_blank").focus();
+        window.open(URL, "_blank") + Form.reset();
     }
 }
 
+
+// klik button untuk lihat lebih lanjut
 let box = document.getElementById("kotak");
 let btn1 = document.getElementById("seen");
 let btn2 = document.getElementById("hide");
