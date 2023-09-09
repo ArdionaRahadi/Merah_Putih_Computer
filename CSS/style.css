@@ -16,7 +16,7 @@ body {
 }
 
 section {
-  padding-top: 7rem;
+  padding-top: 6rem;
 }
 
 footer {
@@ -27,7 +27,7 @@ i {
   margin-right: 2px;
 }
 
-#kotak, #hide {
+#kotak,
+#hide {
   display: none;
 }
-
