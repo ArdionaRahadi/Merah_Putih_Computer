@@ -26,12 +26,12 @@ function hide() {
 }
 
 //
-function hehe() {
-  const pw = prompt('password (1-5000)');
+// function hehe() {
+//   const pw = prompt('password (1-5000)');
 
-  if (pw == 2604) {
-    window.open('https://youtube.com/shorts/G9e2Pk86JVU?si=0b8t32Mm0A0-C8V7', '_blank');
-  } else {
-    alert('Password Salah');
-  }
-}
+//   if (pw == 2604) {
+//     window.open('https://youtube.com/shorts/G9e2Pk86JVU?si=0b8t32Mm0A0-C8V7', '_blank');
+//   } else {
+//     alert('Password Salah');
+//   }
+// }
