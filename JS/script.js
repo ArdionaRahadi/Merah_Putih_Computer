@@ -3,9 +3,9 @@ function validasi() {
   let nama = document.getElementById('nama').value;
   let telp = document.getElementById('no').value;
   let pesan = document.getElementById('pesan').value;
-  let URL = window.open('https://wa.me/6285606775439?text=*Nama* :%20' + nama + '%0a*No.Telp* :%20' + telp + '%0a*Pesan* :%20' + pesan + '%0a');
+  let URL = window.open("https://api.whatsapp.com/send?phone=6285606775439&text=*Nama* :%20' + nama + '%0a*No.Telp* :%20' + telp + '%0a*Pesan* :%20' + pesan + '%0a");
 
-  window.open(URL).focus;
+  window.open(URL).focus + form.reset();
 }
 
 // klik button untuk lihat lebih lanjut
