@@ -5,7 +5,7 @@ function validasi() {
   let pesan = document.getElementById('pesan').value;
   let URL = window.open('https://wa.me/6285606775439?text=*Nama* :%20' + nama + '%0a*No.Telp* :%20' + telp + '%0a*Pesan* :%20' + pesan + '%0a');
 
-  window.open(URL);
+  window.open(URL).focus;
 }
 
 // klik button untuk lihat lebih lanjut
