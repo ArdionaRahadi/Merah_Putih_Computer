@@ -1,6 +1,5 @@
 // validasi form
 function validasi() {
-<<<<<<< HEAD
   let nama = document.getElementById("nama").value;
   let telp = document.getElementById("no").value;
   let pesan = document.getElementById("pesan").value;
