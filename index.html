@@ -126,7 +126,7 @@
     <!-- jumbotron end -->
 
     <!-- about start -->
-    <section id="about">
+    <section id="about" class="">
       <div class="container">
         <div class="row text-center mb-4">
           <div class="col mb-3">
@@ -161,15 +161,29 @@
     <!-- about end -->
 
     <!-- produk start -->
-    <section id="product">
+    <section id="product" class="">
       <div class="container">
         <div class="row text-center mb-4">
           <div class="col mb-2">
             <h2 class="fw-bold">Products Us</h2>
           </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <form autocomplete="off" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  id="search-item"
+                  placeholder="Search products"
+                  aria-label="Search"
+                  onkeyup="search()"
+                />
+              </form>
+            </div>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-md-3 mb-4">
+        <div class="row" id="product-list">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/LogitechM170.jpg"
@@ -188,7 +202,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/LogitechM90.jpg"
@@ -207,7 +221,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Mouse-Robot.jpg"
@@ -226,7 +240,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Mouse-Gamen.jpg"
@@ -245,7 +259,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Tinta-Epson-664.jpg"
@@ -264,7 +278,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Tinta-Epson-003.jpg"
@@ -283,7 +297,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Tinta-Pixma-790.jpg"
@@ -302,7 +316,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Tinta-DInkpng.jpg"
@@ -325,8 +339,8 @@
       </div>
 
       <div class="container" id="kotak">
-        <div class="row">
-          <div class="col-md-3 mb-4">
+        <div class="row" id="product-list">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Tinta-GT52.jpg"
@@ -345,7 +359,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Charger-Laptop-Asus.jpg"
@@ -353,7 +367,7 @@
                 alt="Charger Laptok Asus"
               />
               <div class="card-body">
-                <p class="card-text fw-bold">Charger Laptok Asus</p>
+                <p class="card-text fw-bold">Charger Laptop Asus</p>
                 <a
                   href="IMG/PKL/Charger-Laptop-Asus.jpg"
                   class="btn btn-primary fw-medium"
@@ -364,7 +378,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Charger-Laptop-Lenovo.jpg"
@@ -383,7 +397,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Charger-Laptop-HP.jpg"
@@ -402,7 +416,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Flashdisk.jpg"
@@ -421,7 +435,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/USB-Hub.jpg"
@@ -440,7 +454,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Kebel-VGA.jpg"
@@ -459,7 +473,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <img
                 src="IMG/PKL/Kabel-HDMI.jpg"
@@ -478,7 +492,28 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3 mb-4">
+          <div class="col-md-3 mb-4 product">
+            <div class="card">
+              <img
+                src="IMG/PKL/USB-Extension.jpg"
+                class="card-img-top"
+                alt="Kabel usb Extension/Perpanjangan "
+              />
+              <div class="card-body">
+                <p class="card-text fw-bold">
+                  Kabel USB Extendsion/Perpanjangan
+                </p>
+                <a
+                  href="IMG/PKL/USB-Extension.jpg"
+                  class="btn btn-primary fw-medium"
+                  data-lightbox="image-17"
+                  data-title="Kabel USB Extension/Perpanjangan | 1,5M | 3M | 5M | 10M"
+                  >Details</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4 product">
             <div class="card">
               <div class="ratio ratio-16x9">
                 <video
@@ -530,7 +565,7 @@
     <!-- produk end -->
 
     <!-- contact start -->
-    <section id="contact">
+    <section id="contact" class="">
       <div class="container">
         <div class="row text-center">
           <div class="col">

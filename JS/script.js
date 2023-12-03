@@ -32,3 +32,28 @@ function hide() {
   btn1.style.display = "block";
   btn2.style.display = "none";
 }
+
+// Search Engine
+const search = () => {
+  const searchbox = document.getElementById("search-item").value.toLowerCase();
+  const storeitems = document.querySelectorAll("#product-list");
+  const product = document.querySelectorAll(".product");
+  const pname = document.querySelectorAll(".card-text");
+
+  for (var i = 0; i < pname.length; i++) {
+    let match = product[i].querySelectorAll(".card-text")[0];
+
+    if (match) {
+      let textvalue = match.textContent || match.innerHTML;
+
+      if (textvalue.toLowerCase().indexOf(searchbox) > -1) {
+        product[i].style.display = "";
+        box.style.display = "block";
+        btn1.style.display = "none";
+        btn2.style.display = "none";
+      } else {
+        product[i].style.display = "none";
+      }
+    }
+  }
+};
