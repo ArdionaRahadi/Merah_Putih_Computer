@@ -4,7 +4,7 @@ function validasi() {
   let telp = document.getElementById("no").value;
   let pesan = document.getElementById("pesan").value;
   let URL = window.open(
-    "https://wa.me/6285606775439?text=*Nama* :%20" +
+    "https://wa.me/6281335789325?text=*Nama* :%20" +
       nama +
       "%0a*No.Telp* :%20" +
       telp +
